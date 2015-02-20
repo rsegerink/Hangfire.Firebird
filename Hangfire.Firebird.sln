@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Firebird", "src\Hangfire.Firebird\Hangfire.Firebird.csproj", "{A740CBBA-4E96-4370-BF86-1D0B33BC6542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C763DA32-8145-4542-8DB1-5DA0B57E7F11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F9826237-34C4-4DA8-B0E3-460FA0DFAB23}"
+	ProjectSection(SolutionItems) = preProject
+		psake-project.ps1 = psake-project.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55A0A45D-2FDB-4BB5-8779-2003EA8B7348}"
+	ProjectSection(SolutionItems) = preProject
+		src\SharedAssemblyInfo.cs = src\SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5527734B-68E9-4C0D-9FE4-8D07040F1145}"
+	ProjectSection(SolutionItems) = preProject
+		packages.config = packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Firebird.Tests", "tests\Hangfire.Firebird.Tests\Hangfire.Firebird.Tests.csproj", "{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspecs", "nuspecs", "{FD88AEE4-B729-4B4D-AB68-D8A7FA1ECF04}"
+	ProjectSection(SolutionItems) = preProject
+		nuspecs\Hangfire.Firebird.nuspec = nuspecs\Hangfire.Firebird.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A740CBBA-4E96-4370-BF86-1D0B33BC6542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A740CBBA-4E96-4370-BF86-1D0B33BC6542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A740CBBA-4E96-4370-BF86-1D0B33BC6542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A740CBBA-4E96-4370-BF86-1D0B33BC6542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B818CE9-F01A-4AFA-86C0-1B0594DBD3DC} = {C763DA32-8145-4542-8DB1-5DA0B57E7F11}
+	EndGlobalSection
+EndGlobal

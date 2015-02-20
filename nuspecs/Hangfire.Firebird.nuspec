@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Hangfire.Firebird</id>
+    <version>1.3.4</version>
+    <title>Hangfire Firebird Storage</title>
+    <authors>Rob Segerink</authors>
+    <owners>robsegerink</owners>
+    <projectUrl>http://hangfire.io/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.github.com/rsegerink/Hangfire.Firebird/master/LICENSE.md</licenseUrl>
+    <description>Firebird storage implementation for Hangfire (background job system for ASP.NET applications).</description>
+    <copyright>Copyright &#169; 2015 Rob Segerink</copyright>
+    <tags>Hangfire Firebird</tags>
+    <releaseNotes>
+      https://github.com/rsegerink/Hangfire.Firebird/releases
+      1.3.4
+      * Initial version
+    </releaseNotes>
+    <dependencies>
+      <dependency id="Hangfire.Core" version="1.3.4" />
+      <dependency id="Dapper" version="1.38" />
+      <dependency id="FirebirdSql.Data.FirebirdClient" version="4.6.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Net45\Hangfire.Firebird.dll" target="lib\net45" />
+    <file src="Net45\Hangfire.Firebird.xml" target="lib\net45" />
+  </files>
+</package>
