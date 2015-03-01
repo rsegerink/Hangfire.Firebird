@@ -19,6 +19,25 @@ app.UseHangfire(config =>
 });
 ```
 
+Using Firebird with MSMQ
+------------------------
+
+To use MSMQ queues, you should do the following steps:
+
+1. **Create them manually on each host**. Don't forget to grant appropriate permissions.
+2. Register all MSMQ queues in current ``FirebirdStorage`` instance.
+
+If you are using only default queue, pass the path pattern to the ``UseMsmqQueues`` extension method (it also applicable to the :doc:`OWIN bootstrapper <owin-bootstrapper>`):
+
+```csharp
+app.UseHangfire(config =>
+{
+   config.UseFirebirdStorage("<connection string or its name>")
+         .UseMsmqQueues(@".\hangfire-{0}");
+});
+```
+
+For more information see http://docs.hangfire.io/en/latest/configuration/using-sql-server-with-msmq.html
 
 Related Projects
 -----------------
