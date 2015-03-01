@@ -8,6 +8,7 @@ Task Default -Depends Collect
 
 Task Test -Depends Compile -Description "Run unit and integration tests." {
     Run-XunitTests "Hangfire.Firebird.Tests"
+	Run-XunitTests "Hangfire.Firebird.Msmq.Tests"
 }
 
 Task Merge -Depends Test -Description "Run ILMerge /internalize to merge assemblies." {
@@ -19,6 +20,7 @@ Task Merge -Depends Test -Description "Run ILMerge /internalize to merge assembl
 
 Task Collect -Depends Merge -Description "Copy all artifacts to the build folder." {
     Collect-Assembly "Hangfire.Firebird" "Net45"
+	Collect-Assembly "Hangfire.Firebird.Msmq" "Net45"
 
     Collect-Tool "src\Hangfire.Firebird\Install.v1.sql"
 }
@@ -28,4 +30,5 @@ Task Pack -Depends Collect -Description "Create NuGet packages and archive files
 
     Create-Archive "Hangfire-Firebird-$version"
     Create-Package "Hangfire.Firebird" $version
+	Create-Package "Hangfire.Firebird.Msmq" $version
 }
