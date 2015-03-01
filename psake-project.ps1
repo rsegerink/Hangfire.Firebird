@@ -29,6 +29,7 @@ Task Pack -Depends Collect -Description "Create NuGet packages and archive files
     $version = Get-BuildVersion
 
     Create-Archive "Hangfire-Firebird-$version"
+
     Create-Package "Hangfire.Firebird" $version
 	Create-Package "Hangfire.Firebird.Msmq" $version
 }
